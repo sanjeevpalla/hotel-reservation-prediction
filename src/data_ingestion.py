@@ -1,4 +1,5 @@
 import os
+import shutil
 import pandas as pd
 from google.cloud import storage
 from sklearn.model_selection import train_test_split
@@ -39,7 +40,7 @@ class DataIngestion:
         try:
             if os.path.exists(self.file_name):
                 os.makedirs(RAW_DIR , exist_ok=True)
-                os.replace(self.file_name, RAW_FILE_PATH)
+                shutil.copy(self.file_name, RAW_FILE_PATH)
                 logger.info(f"CSV file is sucesfully copied to {RAW_FILE_PATH}")
             else:
                 logger.error(f"File {self.file_name} does not exist in the local directory")
