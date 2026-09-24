@@ -11,6 +11,12 @@ An end-to-end MLOps project that predicts whether a hotel booking will be **canc
 - 🌐 **Web app** built with Flask for interactive cancellation predictions.
 - 🐳 **Containerized deployment** via Docker, with a Jenkins pipeline that builds the image and deploys it to Google Cloud Run.
 
+## 🖼️ Screenshots
+
+### Web App UI
+
+![Hotel Reservation Prediction web app](assets/webapp_ui.png)
+
 ## 📁 Project Structure
 
 ```
